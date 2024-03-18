@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Unit Test
-      run: python -m unittest -v test
+        run: python -m unittest -v test
 
 
   code-analisys:
