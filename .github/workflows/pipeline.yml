@@ -132,7 +132,7 @@ jobs:
 
 
   Dast:
-    needs: Build
+    needs: Deploy
     runs-on: ubuntu-latest
     permissions:
       contents: write
