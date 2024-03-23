@@ -7,4 +7,4 @@ csrf = CSRFProtect(app)
 
 @app.route("/")
 def pagina_inicial():
-    return "Mensagem Custom v2.0"
+    return "Concluído!!"
