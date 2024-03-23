@@ -15,7 +15,7 @@ jobs:
         run: python -m unittest -v test
 
 
-  code-analisys-Sonar:
+  Sast:
     runs-on: ubuntu-latest
     needs: unit-test
     steps:
@@ -31,7 +31,7 @@ jobs:
 
   analyze-CodeQL:
     name: CodeQL
-    needs: code-analisys-Sonar
+    needs: Sast
     runs-on: ubuntu-latest
     permissions:
       actions: read
